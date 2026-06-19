@@ -1,0 +1,220 @@
+实验二 步骤4：所有需要填写的代码与思考题
+
+说明：本实验原题共5道（第5题选做），未提供第6题。
+
+==============================
+题目一：学生成绩管理系统
+==============================
+[填写代码]
+(1) 私有属性声明：
+private String name;
+private String id;
+private int mathScore;
+private int englishScore;
+
+(2) 带参构造中 this 赋值：
+this.name = name;
+this.id = id;
+this.mathScore = mathScore;
+this.englishScore = englishScore;
+
+(3) 无参构造：
+public Student() {
+    this("未知", "000", 0, 0);
+}
+
+(4) setMathScore 合法性检查：
+public void setMathScore(int newScore) {
+    if (newScore < 0 || newScore > 100) {
+        System.out.println("错误：成绩必须在0-100之间！");
+        return;
+    }
+    this.mathScore = newScore;
+}
+
+(5) setEnglishScore 合法性检查：
+public void setEnglishScore(int newScore) {
+    if (newScore < 0 || newScore > 100) {
+        System.out.println("错误：成绩必须在0-100之间！");
+        return;
+    }
+    this.englishScore = newScore;
+}
+
+(6) 平均分：
+public int computeAverage() {
+    return (mathScore + englishScore) / 2;
+}
+
+(7) 打印信息：
+public void printInfo() {
+    System.out.println("学号: " + id + ", 姓名: " + name + ", 数学: " + mathScore + ", 英语: " + englishScore + ", 平均分: " + computeAverage());
+}
+
+(8) 带参构造创建 s1：
+Student s1 = new Student("张三", "2024001", 85, 90);
+
+(9) 无参构造 + setter 创建 s2：
+Student s2 = new Student();
+s2.setName("李四");
+s2.setId("2024002");
+s2.setMathScore(72);
+s2.setEnglishScore(88);
+
+(10) 设置非法成绩：
+s2.setMathScore(-10);
+
+[思考题]
+无单独思考题（本题主要是封装与校验逻辑理解）。
+
+==============================
+题目二：班级计数器（static）
+==============================
+[填写代码]
+(1) 两个静态变量：
+private static int totalCount = 0;
+private static int nextId = 1;
+
+(2) 构造中编号和计数：
+this.memberId = nextId;
+nextId++;
+totalCount++;
+
+(3) 自我介绍：
+System.out.println("大家好，我是 " + name + "，编号 " + memberId);
+
+(4) 静态方法 getTotalCount：
+public static int getTotalCount() {
+    return totalCount;
+}
+
+(5) 静态方法 printClassInfo：
+public static void printClassInfo() {
+    System.out.println("当前班级共有 " + totalCount + " 名成员");
+}
+
+(6) 初始人数输出：
+ClassMember.printClassInfo();
+
+(7) 再次输出人数：
+ClassMember.printClassInfo();
+
+[思考题 + 答案]
+1) totalCount 若改为实例变量会怎样？
+答：每个对象各有一份计数，无法统计“全班总人数”。
+
+2) static 方法能直接访问 name 吗？
+答：不能。static 方法属于类，不依附具体对象；name 是实例变量，必须通过对象访问。
+
+==============================
+题目三：坐标点复制实验
+==============================
+[填写代码]
+(1) changePoint 中修改对象属性：
+p.x = 100;
+p.y = 200;
+System.out.println("方法内 p = ");
+p.print();
+
+(2) replacePoint 中重定向形参：
+p = new Point(999, 999);
+System.out.println("方法内重定向后 p = ");
+p.print();
+
+[思考题 + 答案]
+为什么测试2会改到 p1，测试3改不到 p2？
+答：Java 统一值传递。引用类型传的是“地址值副本”。
+- 测试2：副本和实参都指向同一对象，改属性会影响原对象。
+- 测试3：只是让形参副本重新指向新对象，实参仍指向旧对象。
+
+==============================
+题目四：对象引用与赋值
+==============================
+[填写代码]
+(1) b 与 a 指向同一对象：
+Point b = a;
+
+(2) 用 c 的值新建 d：
+Point d = new Point(c.x, c.y);
+
+(3) 让 f 指向新对象：
+f = new Point(5, 6);
+
+[思考题 + 答案]
+= 对基本类型与引用类型分别意味着什么？
+答：
+- 基本类型：复制具体值。
+- 引用类型：复制引用（地址值），不是复制对象本体。
+
+==============================
+题目五（选做）：图书馆管理系统
+==============================
+[填写代码]
+(1) 静态总书量：
+private static int totalBooks = 0;
+
+(2) 静态嵌套类 Book：
+public static class Book {
+    private String title;
+    private String author;
+
+    public Book(String title, String author) {
+        this.title = title;
+        this.author = author;
+        totalBooks++;
+    }
+
+    public void showInfo() {
+        System.out.println("《" + title + "》 作者: " + author);
+    }
+}
+
+(3) 内部类 BorrowRecord：
+public class BorrowRecord {
+    private Book book;
+    private String borrower;
+
+    public BorrowRecord(Book book, String borrower) {
+        this.book = book;
+        this.borrower = borrower;
+    }
+
+    public void printRecord() {
+        System.out.println(borrower + " 从 [" + libraryName + "] 借出了：");
+        book.showInfo();
+    }
+}
+
+(4) borrowBook 中创建记录并打印：
+BorrowRecord record = new BorrowRecord(book, borrower);
+record.printRecord();
+
+(5) 返回 totalBooks：
+public static int getTotalBooks() {
+    return totalBooks;
+}
+
+(6) 创建三本书：
+Library.Book book1 = new Library.Book("Java编程思想", "Bruce Eckel");
+Library.Book book2 = new Library.Book("数据结构", "严蔚敏");
+Library.Book book3 = new Library.Book("计算机网络", "谢希仁");
+
+(7) 创建图书馆对象：
+Library library = new Library("北京交通大学图书馆");
+
+(8) 借书调用：
+library.borrowBook(book1, "张三");
+library.borrowBook(book2, "李四");
+
+(9) 打印总书量：
+System.out.println("图书馆共有 " + Library.getTotalBooks() + " 本书");
+
+[思考题 + 答案]
+1) Book 与 BorrowRecord 创建方式差异？
+答：Book 是静态嵌套类，可直接 Library.Book 创建；BorrowRecord 是内部类，必须依附某个 Library 实例。
+
+2) 为什么 Book 不能直接访问 libraryName？
+答：Book 不持有外部类实例引用。
+
+3) 为什么 BorrowRecord 可以直接访问 libraryName？
+答：内部类隐式持有外部类 this 引用。
