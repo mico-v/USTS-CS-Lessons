@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import mathjax3 from 'markdown-it-mathjax3'
 
 export default defineConfig({
   title: 'USTS CS Lessons',
@@ -7,12 +8,18 @@ export default defineConfig({
   base: '/USTS-CS-Lessons/',
   cleanUrls: true,
   lastUpdated: true,
+  markdown: {
+    config: (md) => {
+      md.use(mathjax3)
+    }
+  },
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
       { text: 'Java 程序设计', link: '/courses/java-programming/' },
       { text: '面向对象程序设计', link: '/courses/object-oriented-programming/' },
-      { text: '计算机程序设计基础', link: '/courses/programming-foundations/' }
+      { text: '计算机程序设计基础', link: '/courses/programming-foundations/' },
+      { text: '线性代数', link: '/courses/linear-algebra/' }
     ],
     sidebar: {
       '/courses/object-oriented-programming/': [
@@ -39,6 +46,12 @@ export default defineConfig({
         { text: 'Project 02', link: '/courses/java-programming/project-02' },
         { text: 'Project 03', link: '/courses/java-programming/project-03' },
         { text: 'Project 04', link: '/courses/java-programming/project-04' }
+      ],
+      '/courses/linear-algebra/': [
+        { text: '课程概览', link: '/courses/linear-algebra/' },
+        { text: '模拟试卷一', link: '/courses/linear-algebra/mock-exam-01' },
+        { text: '模拟试卷二', link: '/courses/linear-algebra/mock-exam-02' },
+        { text: '模拟试卷三', link: '/courses/linear-algebra/mock-exam-03' }
       ],
       '/courses/programming-foundations/': [
         { text: '课程概览', link: '/courses/programming-foundations/' },

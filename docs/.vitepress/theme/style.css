@@ -1,0 +1,16 @@
+/* MathJax 数学公式样式优化 */
+mjx-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+/* 大型矩阵在小屏幕上可横向滚动 */
+mjx-container mjx-mtable {
+  overflow-x: auto;
+}
+
+/* 行内公式对齐优化 */
+mjx-container[display="false"] {
+  display: inline-block;
+}
