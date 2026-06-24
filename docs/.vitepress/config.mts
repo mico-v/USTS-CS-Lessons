@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'USTS CS Lessons',
   description: 'USTS 计算机课程代码与实验文档',
   lang: 'zh-CN',
+  base: '/USTS-CS-Lessons/',
   cleanUrls: true,
   lastUpdated: true,
   themeConfig: {
