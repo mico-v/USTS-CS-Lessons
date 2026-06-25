@@ -69,9 +69,12 @@ export const sidebar: DefaultTheme.Sidebar = {
     {
       text: '复习讲义',
       items: [
-        { text: '第七章 微分方程', link: '/courses/advanced-mathematics/ch7-review' },
-        { text: '第八章 向量代数与空间解析几何', link: '/courses/advanced-mathematics/ch8-review' },
-        { text: '第九章 多元函数微分学', link: '/courses/advanced-mathematics/ch9-review' }
+        { text: '第七章 微分方程', link: '/courses/advanced-mathematics/ch7' },
+        { text: '第八章 向量代数与空间解析几何', link: '/courses/advanced-mathematics/ch8' },
+        { text: '第九章 多元函数微分学', link: '/courses/advanced-mathematics/ch9' },
+        { text: '第十章 重积分', link: '/courses/advanced-mathematics/ch10' },
+        { text: '第十一章 曲线积分与曲面积分', link: '/courses/advanced-mathematics/ch11' },
+        { text: '第十二章 无穷级数', link: '/courses/advanced-mathematics/ch12' }
       ]
     }
   ]
