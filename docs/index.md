@@ -18,6 +18,9 @@ hero:
    - theme: alt
      text: 线性代数
      link: /courses/liner-algebra/
+   - theme: alt
+     text: 高等数学
+     link: /courses/advanced-mathematics/
 
 features:
  - title: 使用main分支编写发布页面
