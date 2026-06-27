@@ -7,20 +7,23 @@ hero:
   tagline: 按课程整理各科复习笔记
   actions:
    - theme: brand
-     text: Java 程序设计
-     link: /courses/java-programming/
+     text: Java 与 OOP
+     link: /courses/java/
    - theme: alt
-     text: 面向对象程序设计
-     link: /courses/object-oriented-programming/
+     text: 计算机学科基础
+     link: /courses/foundation-of-computer-science/
    - theme: alt
      text: 计算机程序设计基础
      link: /courses/programming-foundations/
    - theme: alt
      text: 线性代数
-     link: /courses/liner-algebra/
+     link: /courses/linear-algebra/
    - theme: alt
      text: 高等数学
      link: /courses/advanced-mathematics/
+   - theme: alt
+     text: 大学物理
+     link: /courses/physics/
 
 features:
  - title: 使用main分支编写发布页面
