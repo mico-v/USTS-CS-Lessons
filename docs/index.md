@@ -18,7 +18,7 @@ hero:
 
 <div class="course-grid">
 
-<a class="course-card" href="/courses/java/">
+<a class="course-card" href="./courses/java/">
   <div class="course-card-icon">☕</div>
   <div class="course-card-body">
     <div class="course-card-title">Java 与面向对象程序设计</div>
@@ -27,7 +27,7 @@ hero:
   </div>
 </a>
 
-<a class="course-card" href="/courses/foundation-of-computer-science/">
+<a class="course-card" href="./courses/foundation-of-computer-science/">
   <div class="course-card-icon">💻</div>
   <div class="course-card-body">
     <div class="course-card-title">计算机学科基础</div>
@@ -36,7 +36,7 @@ hero:
   </div>
 </a>
 
-<a class="course-card" href="/courses/programming-foundations/">
+<a class="course-card" href="./courses/programming-foundations/">
   <div class="course-card-icon">🐍</div>
   <div class="course-card-body">
     <div class="course-card-title">计算机程序设计基础</div>
@@ -45,7 +45,7 @@ hero:
   </div>
 </a>
 
-<a class="course-card" href="/courses/linear-algebra/">
+<a class="course-card" href="./courses/linear-algebra/">
   <div class="course-card-icon">📐</div>
   <div class="course-card-body">
     <div class="course-card-title">线性代数</div>
@@ -54,7 +54,7 @@ hero:
   </div>
 </a>
 
-<a class="course-card" href="/courses/advanced-mathematics/">
+<a class="course-card" href="./courses/advanced-mathematics/">
   <div class="course-card-icon">📊</div>
   <div class="course-card-body">
     <div class="course-card-title">高等数学</div>
@@ -63,7 +63,7 @@ hero:
   </div>
 </a>
 
-<a class="course-card" href="/courses/physics/">
+<a class="course-card" href="./courses/physics/">
   <div class="course-card-icon">⚛️</div>
   <div class="course-card-body">
     <div class="course-card-title">大学物理</div>
