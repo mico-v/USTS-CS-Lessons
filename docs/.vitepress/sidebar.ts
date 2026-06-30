@@ -99,6 +99,7 @@ export const sidebar: DefaultTheme.Sidebar = {
   '/courses/physics/': [
     { text: '课程概览', link: '/courses/physics/' },
     { text: 'A 卷原题与解析', link: '/courses/physics/exam-a' },
-    { text: 'B 卷原题与解析', link: '/courses/physics/exam-b' }
+    { text: 'B 卷原题与解析', link: '/courses/physics/exam-b' },
+    { text: '大学物理 B（一）复习知识讲义', link: '/courses/physics/review-notes' }
   ]
 }

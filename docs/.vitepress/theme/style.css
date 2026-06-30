@@ -14,3 +14,107 @@ mjx-container mjx-mtable {
 mjx-container[display="false"] {
   display: inline-block;
 }
+
+/* ===== 课程目录卡片网格 ===== */
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 24px 0 40px;
+}
+
+@media (min-width: 960px) {
+  .course-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  border: 1px solid var(--vp-c-bg-soft);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+  text-decoration: none !important;
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.course-card:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.course-card-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.course-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.course-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  line-height: 1.4;
+}
+
+.course-card-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--vp-c-text-2);
+}
+
+.course-card-meta {
+  font-size: 12px;
+  color: var(--vp-c-brand-1);
+  font-weight: 500;
+}
+
+/* ===== 统计区域 ===== */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.stat-item {
+  text-align: center;
+  padding: 20px 12px;
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+}
+
+.stat-num {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--vp-c-brand-1);
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: var(--vp-c-text-2);
+  margin-top: 4px;
+}
