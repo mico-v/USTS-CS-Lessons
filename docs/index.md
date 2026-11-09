@@ -72,17 +72,26 @@ hero:
   </div>
 </a>
 
+<a class="course-card" href="./courses/web-interaction/">
+  <div class="course-card-icon">🌐</div>
+  <div class="course-card-body">
+    <div class="course-card-title">Web 交互技术</div>
+    <div class="course-card-desc">8 章复习讲义，覆盖 Web 概述、HTML5、CSS3 基础与布局、JavaScript 语法与对象、DOM/BOM、jQuery，每章附考点自测。</div>
+    <div class="course-card-meta">9 份文档</div>
+  </div>
+</a>
+
 </div>
 
 ## 📊 课程统计
 
 <div class="stats-grid">
   <div class="stat-item">
-    <div class="stat-num">6</div>
+    <div class="stat-num">7</div>
     <div class="stat-label">门课程</div>
   </div>
   <div class="stat-item">
-    <div class="stat-num">50+</div>
+    <div class="stat-num">60+</div>
     <div class="stat-label">份文档</div>
   </div>
   <div class="stat-item">

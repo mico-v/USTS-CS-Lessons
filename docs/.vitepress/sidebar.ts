@@ -101,5 +101,22 @@ export const sidebar: DefaultTheme.Sidebar = {
     { text: 'A 卷原题与解析', link: '/courses/physics/exam-a' },
     { text: 'B 卷原题与解析', link: '/courses/physics/exam-b' },
     { text: '大学物理 B（一）复习知识讲义', link: '/courses/physics/review-notes' }
+  ],
+  '/courses/web-interaction/': [
+    { text: '课程概览', link: '/courses/web-interaction/' },
+    {
+      text: '复习讲义',
+      items: [
+        { text: '第1章 Web 前端开发概述', link: '/courses/web-interaction/ch01-web-overview' },
+        { text: '第2章 HTML5 基础', link: '/courses/web-interaction/ch02-html5' },
+        { text: '第3章 CSS3 基础', link: '/courses/web-interaction/ch03-css3-basics' },
+        { text: '第4章 CSS3 布局', link: '/courses/web-interaction/ch04-css3-layout' },
+        { text: '第5章 JavaScript 基础', link: '/courses/web-interaction/ch05-javascript-basics' },
+        { text: '第6章 JavaScript 对象', link: '/courses/web-interaction/ch06-javascript-objects' },
+        { text: '第7章 JavaScript DOM 与 BOM', link: '/courses/web-interaction/ch07-dom-bom' },
+        { text: '第8章 jQuery 基础', link: '/courses/web-interaction/ch08-jquery' }
+      ]
+    },
+    { text: '考前速查与易错点', link: '/courses/web-interaction/cheat-sheet' }
   ]
 }
