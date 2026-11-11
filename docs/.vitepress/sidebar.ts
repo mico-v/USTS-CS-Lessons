@@ -117,6 +117,13 @@ export const sidebar: DefaultTheme.Sidebar = {
         { text: '第8章 jQuery 基础', link: '/courses/web-interaction/ch08-jquery' }
       ]
     },
+    {
+      text: '作业与例题',
+      items: [
+        { text: '作业考点总结与失分分析', link: '/courses/web-interaction/ch09-homework-analysis' },
+        { text: '例题精讲：三份作业真题', link: '/courses/web-interaction/ch10-examples' }
+      ]
+    },
     { text: '考前速查与易错点', link: '/courses/web-interaction/cheat-sheet' }
   ]
 }

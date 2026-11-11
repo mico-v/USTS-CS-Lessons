@@ -1,6 +1,6 @@
 # Web 交互技术复习资料
 
-本目录根据《Web 交互技术》课程 8 份课件整理，目标不是抄课件，而是把「考试会问什么、代码怎么写、哪里最容易错」拎出来，考前按章节过一遍即可。
+本目录根据《Web 交互技术》课程 8 份课件 + 学习通上三次实际作业整理，目标不是抄课件，而是把「考试会问什么、代码怎么写、哪里最容易错」拎出来，考前按章节过一遍即可。
 
 ## 课程信息
 
@@ -28,6 +28,8 @@
 | [第 6 章](./ch06-javascript-objects.md) | JavaScript 对象（Array/String/Date/Math） | JavaScript对象.pptx |
 | [第 7 章](./ch07-dom-bom.md) | JavaScript DOM 与 BOM | JavaScript_DOM.pptx |
 | [第 8 章](./ch08-jquery.md) | jQuery 基础与选择器 | 10_jQuery_基础.pptx |
+| [作业考点总结](./ch09-homework-analysis.md) | 三份作业反推的考点地图 + 失分分析 | 学习通作业 |
+| [例题精讲](./ch10-examples.md) | 40 道真题精讲 + 填空速记表 | 学习通作业 |
 | [考前速查](./cheat-sheet.md) | 语法速查表 + 高频易错点 | 全部课件 |
 
 ## 复习建议
@@ -38,3 +40,4 @@
 4. 第 5–7 章属于 JS 主线，考法多为「读代码写结果」，务必把 `typeof`、`parseInt`、`==` 与 `===`、变量作用域、`this` 这几处弄死。
 5. 第 8 章 jQuery 只考「会不会用」，重点记 `$()`、`ready()`、选择器分类和 jQuery 与 DOM 对象的互转。
 6. 考前最后一天只看[速查表](./cheat-sheet.md)，把表格当成小抄背。
+7. 时间紧就按「[考点总结](./ch09-homework-analysis.md) → [例题精讲](./ch10-examples.md) → [速查表](./cheat-sheet.md)」这条线走，这三页是从实际作业里挖出来的，命中率最高。
