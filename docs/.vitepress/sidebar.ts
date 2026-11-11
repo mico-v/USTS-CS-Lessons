@@ -102,6 +102,20 @@ export const sidebar: DefaultTheme.Sidebar = {
     { text: 'B 卷原题与解析', link: '/courses/physics/exam-b' },
     { text: '大学物理 B（一）复习知识讲义', link: '/courses/physics/review-notes' }
   ],
+  '/courses/data-structures/': [
+    { text: '课程概览', link: '/courses/data-structures/' },
+    {
+      text: '复习讲义',
+      items: [
+        { text: '第1章 绪论', link: '/courses/data-structures/ch01-introduction' },
+        { text: '第2章 线性表', link: '/courses/data-structures/ch02-linear-list' },
+        { text: '第3章 栈与队列', link: '/courses/data-structures/ch03-stack-queue' },
+        { text: '第4章 串和数组', link: '/courses/data-structures/ch04-string-array' },
+        { text: '第5章 树与二叉树', link: '/courses/data-structures/ch05-tree-binary-tree' }
+      ]
+    },
+    { text: '考前速查与易错点', link: '/courses/data-structures/cheat-sheet' }
+  ],
   '/courses/web-interaction/': [
     { text: '课程概览', link: '/courses/web-interaction/' },
     {

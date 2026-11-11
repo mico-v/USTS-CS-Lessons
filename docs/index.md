@@ -72,6 +72,15 @@ hero:
   </div>
 </a>
 
+<a class="course-card" href="./courses/data-structures/">
+  <div class="course-card-icon">🌳</div>
+  <div class="course-card-body">
+    <div class="course-card-title">数据结构（Java 语言描述）</div>
+    <div class="course-card-desc">5 章复习讲义，覆盖绪论与算法分析、线性表、栈与队列、串与数组、树与二叉树（含哈夫曼），代码与课件接口一致，附考前速查表。</div>
+    <div class="course-card-meta">6 份文档</div>
+  </div>
+</a>
+
 <a class="course-card" href="./courses/web-interaction/">
   <div class="course-card-icon">🌐</div>
   <div class="course-card-body">
@@ -87,11 +96,11 @@ hero:
 
 <div class="stats-grid">
   <div class="stat-item">
-    <div class="stat-num">7</div>
+    <div class="stat-num">8</div>
     <div class="stat-label">门课程</div>
   </div>
   <div class="stat-item">
-    <div class="stat-num">60+</div>
+    <div class="stat-num">65+</div>
     <div class="stat-label">份文档</div>
   </div>
   <div class="stat-item">
