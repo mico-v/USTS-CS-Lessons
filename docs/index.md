@@ -90,17 +90,26 @@ hero:
   </div>
 </a>
 
+<a class="course-card" href="./courses/discrete-math/">
+  <div class="course-card-icon">🔢</div>
+  <div class="course-card-body">
+    <div class="course-card-title">离散数学</div>
+    <div class="course-card-desc">7 章复习讲义，覆盖集合论、命题逻辑、谓词逻辑、二元关系、特殊关系、图与特殊图，零基础可读，含逐步演算与自测。</div>
+    <div class="course-card-meta">9 份文档</div>
+  </div>
+</a>
+
 </div>
 
 ## 📊 课程统计
 
 <div class="stats-grid">
   <div class="stat-item">
-    <div class="stat-num">8</div>
+    <div class="stat-num">9</div>
     <div class="stat-label">门课程</div>
   </div>
   <div class="stat-item">
-    <div class="stat-num">65+</div>
+    <div class="stat-num">75+</div>
     <div class="stat-label">份文档</div>
   </div>
   <div class="stat-item">

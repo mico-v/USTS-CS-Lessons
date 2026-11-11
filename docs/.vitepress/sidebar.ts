@@ -116,6 +116,22 @@ export const sidebar: DefaultTheme.Sidebar = {
     },
     { text: '考前速查与易错点', link: '/courses/data-structures/cheat-sheet' }
   ],
+  '/courses/discrete-math/': [
+    { text: '课程概览', link: '/courses/discrete-math/' },
+    {
+      text: '复习讲义',
+      items: [
+        { text: '第1章 集合论', link: '/courses/discrete-math/ch01-set-theory' },
+        { text: '第2章 命题逻辑', link: '/courses/discrete-math/ch02-propositional-logic' },
+        { text: '第3章 谓词逻辑', link: '/courses/discrete-math/ch03-predicate-logic' },
+        { text: '第4章 二元关系', link: '/courses/discrete-math/ch04-binary-relations' },
+        { text: '第5章 特殊关系', link: '/courses/discrete-math/ch05-special-relations' },
+        { text: '第6章 图', link: '/courses/discrete-math/ch06-graphs' },
+        { text: '第7章 特殊图', link: '/courses/discrete-math/ch07-special-graphs' }
+      ]
+    },
+    { text: '考前速查与易错点', link: '/courses/discrete-math/cheat-sheet' }
+  ],
   '/courses/web-interaction/': [
     { text: '课程概览', link: '/courses/web-interaction/' },
     {
