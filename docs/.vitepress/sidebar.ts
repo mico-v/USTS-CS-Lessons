@@ -2,12 +2,15 @@ import type { DefaultTheme } from 'vitepress'
 
 export const sidebar: DefaultTheme.Sidebar = {
   '/courses/curriculum/': [
-    { text: '专业课地图', link: '/courses/curriculum/' },
-    { text: '先看结论', link: '/courses/curriculum/#一、先看结论' },
-    { text: '学分分布', link: '/courses/curriculum/#二、每学期学分分布' },
-    { text: '按学期逐门看', link: '/courses/curriculum/#三、按学期逐门看' },
-    { text: '三条主干课链', link: '/courses/curriculum/#四、三条主干课链' },
-    { text: '已整理资料的课程', link: '/courses/curriculum/#五、本站已整理资料的课程' }
+    { text: '培养方案地图', link: '/courses/curriculum/' },
+    { text: '总体构成', link: '/courses/curriculum/#一、总体构成' },
+    { text: '学期分布', link: '/courses/curriculum/#二、学期分布' },
+    { text: '通识教育课程', link: '/courses/curriculum/#三、通识教育课程' },
+    { text: '专业教育课程', link: '/courses/curriculum/#四、专业教育课程' },
+    { text: '素质拓展课程', link: '/courses/curriculum/#五、素质拓展课程' },
+    { text: '课程衔接关系', link: '/courses/curriculum/#六、课程衔接关系' },
+    { text: '本站讲义索引', link: '/courses/curriculum/#七、本站讲义索引' },
+    { text: '使用说明', link: '/courses/curriculum/#八、使用说明' }
   ],
   '/courses/java/': [
     { text: '课程概览', link: '/courses/java/' },

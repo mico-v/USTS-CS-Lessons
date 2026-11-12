@@ -108,9 +108,9 @@ hero:
 <a class="course-card" href="./courses/curriculum/">
   <div class="course-card-icon">🗺</div>
   <div class="course-card-body">
-    <div class="course-card-title">计算机科学与技术 · 专业课地图</div>
-    <div class="course-card-desc">从培养方案里抽出的 48 门专业教育课程，按八个学期铺开：学分、学时构成（理论/实验/上机/实践）、考核方式、起止周、必修选修，附三条主干课链。</div>
-    <div class="course-card-meta">48 门专业课 · 107 学分 · 3 条课链</div>
+    <div class="course-card-title">计算机科学与技术 · 培养方案地图</div>
+    <div class="course-card-desc">2025 级培养方案全表 83 门课程，专业课与通识课一并统计：类别构成、学分与学时结构、八个学期的负荷分布，以及课程衔接关系与本站讲义索引。</div>
+    <div class="course-card-meta">83 门课程 · 176 学分 · 9 份讲义</div>
   </div>
 </a>
 
