@@ -101,6 +101,21 @@ hero:
 
 </div>
 
+## 🗺 培养方案速查
+
+<div class="course-grid">
+
+<a class="course-card" href="./courses/curriculum/">
+  <div class="course-card-icon">🗺</div>
+  <div class="course-card-body">
+    <div class="course-card-title">计算机科学与技术 · 专业课地图</div>
+    <div class="course-card-desc">从培养方案里抽出的 48 门专业教育课程，按八个学期铺开：学分、学时构成（理论/实验/上机/实践）、考核方式、起止周、必修选修，附三条主干课链。</div>
+    <div class="course-card-meta">48 门专业课 · 107 学分 · 3 条课链</div>
+  </div>
+</a>
+
+</div>
+
 ## 📊 课程统计
 
 <div class="stats-grid">

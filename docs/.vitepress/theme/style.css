@@ -118,3 +118,29 @@ mjx-container[display="false"] {
   color: var(--vp-c-text-2);
   margin-top: 4px;
 }
+
+/* 专业课地图：字段多，桌面端铺满正文宽度，表头不折行；窄屏仍横向滚动 */
+@media (min-width: 960px) {
+  .curriculum .vp-doc table {
+    display: table;
+    width: 100%;
+  }
+}
+
+.curriculum .vp-doc th {
+  white-space: nowrap;
+}
+
+.curriculum .vp-doc td:first-child {
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.curriculum .vp-doc td:nth-child(2) {
+  min-width: 10.5em;
+}
+
+.curriculum .vp-doc td:nth-child(6),
+.curriculum .vp-doc td:nth-child(7) {
+  white-space: nowrap;
+}

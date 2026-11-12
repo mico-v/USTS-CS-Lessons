@@ -1,6 +1,14 @@
 import type { DefaultTheme } from 'vitepress'
 
 export const sidebar: DefaultTheme.Sidebar = {
+  '/courses/curriculum/': [
+    { text: '专业课地图', link: '/courses/curriculum/' },
+    { text: '先看结论', link: '/courses/curriculum/#一、先看结论' },
+    { text: '学分分布', link: '/courses/curriculum/#二、每学期学分分布' },
+    { text: '按学期逐门看', link: '/courses/curriculum/#三、按学期逐门看' },
+    { text: '三条主干课链', link: '/courses/curriculum/#四、三条主干课链' },
+    { text: '已整理资料的课程', link: '/courses/curriculum/#五、本站已整理资料的课程' }
+  ],
   '/courses/java/': [
     { text: '课程概览', link: '/courses/java/' },
     {
